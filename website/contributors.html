@@ -4,34 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 Days of Web Development - Showcase</title>
-    <link rel="stylesheet" href="website/style.css">
+    <title>Contributors | 100 Days of Web</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
     <nav class="navbar">
-<<<<<<< Updated upstream
-        <div class="logo">DevChallenge 🚀</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="website/projects.html">Projects</a></li>
-            <li><a href="website/contribute.html">Contribute</a></li>
-            <li><a href="website/structure.html">Structure</a></li>
-        </ul>
-=======
         <div class="container nav-content">
             <div class="logo">
                 <span>100</span> Days of Web
             </div>
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="website/projects.html">Projects</a></li>
-                <li><a href="website/about.html">About</a></li>
-                <li><a href="website/contributors.html">Contributors</a></li>
-                <li><a href="website/structure.html">Structure</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="active">Contributors</a></li>
+                <li><a href="structure.html">Structure</a></li>
             </ul>
             <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -42,94 +36,41 @@
                 </svg>
             </button>
         </div>
->>>>>>> Stashed changes
     </nav>
 
-    <header class="hero">
-        <h1>100 Days Of Web Development</h1>
-        <p>Master HTML, CSS & JavaScript through daily challenges and real-world projects.</p>
-        <a href="website/projects.html" class="btn">Explore Projects</a>
-    </header>
-
     <main class="container">
-<<<<<<< Updated upstream
-        <section>
-            <h2>📖 About the Project</h2>
-            <p style="color: var(--text-secondary);">This repository documents the <strong>100 Days of Web Development
-                    Challenge</strong>. The goal is to strengthen frontend fundamentals, improve problem-solving, and
-                build real-world projects while maintaining daily GitHub consistency.</p>
-        </section>
-
-        <section>
-            <h2>🎯 Challenge Goals</h2>
-            <ul class="goals-list">
-                <li>✅ Master HTML, CSS & JavaScript fundamentals</li>
-                <li>✅ Build real-world frontend projects</li>
-                <li>✅ Improve GitHub contribution consistency</li>
-                <li>✅ Prepare for Open Source, Internships & GSoC</li>
-            </ul>
-=======
         <header class="hero">
-            <h1>100 Days of Web Magic</h1>
-            <p>Discover amazing mini projects crafted with modern web technologies.<br>HTML, CSS, and JavaScript at
-                their finest!</p>
-            <div style="display: flex; gap: 1rem; justify-content: center;">
-                <a href="website/projects.html" class="btn btn-primary">Explore 100 Projects</a>
-                <a href="website/about.html" class="btn btn-outline">About the Challenge</a>
+            <h1>Hall of Fame</h1>
+            <p>The amazing developers who have contributed code, fixed bugs, and improved this journey.</p>
+            <div class="search-container" style="margin: 2rem auto 0;">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input type="text" id="contributorSearch" class="search-input" placeholder="Search contributors...">
             </div>
         </header>
 
-        <section class="tracker-section">
-            <div class="tracker-header">
-                <div class="tracker-title">
-                    <h2>Your Progress</h2>
-                    <p><span id="completedCount">0</span> / 100 Days Completed</p>
-                </div>
-            </div>
-            <div class="heatmap-grid" id="heatmapGrid">
-                <!-- Generated by JS -->
+        <section>
+            <div id="contributors-grid" class="contributors-grid">
+                <!-- Injected by script.js -->
             </div>
         </section>
 
-        <!-- Quick Links / Statistics -->
-        <section class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 4rem;">
-            <div class="contributor-card">
-                <h3>100 Projects</h3>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">From Beginner to Capstone</p>
+        <section style="margin-top: 6rem; text-align: center;">
+            <div
+                style="background: var(--bg-card); padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                <h2>Want to Contribute?</h2>
+                <p style="color: var(--text-secondary); margin: 1rem 0 2rem;">
+                    This project is open source. Fork the repo, add your project or fix a bug, and send a PR!
+                </p>
+                <a href="https://github.com/Shubham-cyber-prog/100-days-of-web-development/blob/main/CONTRIBUTING.md"
+                    target="_blank" class="btn btn-primary">Read Guidelines</a>
             </div>
-            <div class="contributor-card">
-                <h3>Open Source</h3>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">MIT Licensed & Free</p>
-            </div>
-            <div class="contributor-card">
-                <h3>Community</h3>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">Join the journey</p>
-            </div>
->>>>>>> Stashed changes
         </section>
-
-        <section id="tracker-section">
-    <h2>📊 Your Progress</h2>
-    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
-        Click a day to mark it as complete. Your progress is saved automatically!
-    </p>
-
-    <div class="tracker-stats">
-        <span>Completed: <strong id="completedCount">0</strong>/100</span>
-        <div class="progress-bar-container">
-            <div class="progress-bar-fill" id="progressBarFill"></div>
-        </div>
-    </div>
-
-    <div class="progress-grid" id="progressGrid">
-        </div>
-</section>
     </main>
 
-<<<<<<< Updated upstream
-    <footer>
-        <p>Maintained by the Shubham-cyber-prog</p>
-=======
     <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -178,11 +119,11 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
-                    <li><a href="#" class="active-link">Home</a></li>
-                    <li><a href="website/projects.html">Projects</a></li>
-                    <li><a href="website/about.html">About Challenge</a></li>
-                    <li><a href="website/contributors.html">Contributors</a></li>
-                    <li><a href="website/structure.html">Structure</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Challenge</a></li>
+                    <li><a href="contributors.html" class="active-link">Contributors</a></li>
+                    <li><a href="structure.html">Structure</a></li>
                 </ul>
             </div>
 
@@ -212,9 +153,9 @@
                 Maintained by <a href="#">Shubham</a> & Contributors
             </div>
         </div>
->>>>>>> Stashed changes
     </footer>
-    <script src="website/tracker.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
