@@ -129,6 +129,7 @@ function renderProjects(category = 'All') {
         card.innerHTML = `
             <div class="card-header">
                 <span class="day-number">Day ${project.day}</span>
+                <span class="badge">${project.level}</span>
             </div>
             <h3>${project.title}</h3>
             <p>Project for Day ${project.day}</p>
