@@ -10,13 +10,28 @@ const ThemeToggle = () => {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="rounded-full"
+      className="relative rounded-full group hover:bg-primary/10 transition-all duration-300"
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
     >
-      {theme === "dark" ? (
-        <Sun className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
-      ) : (
-        <Moon className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
-      )}
+      {/* Animated background */}
+      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      
+      {/* Icon container */}
+      <div className="relative">
+        {/* Sun icon */}
+        <Sun className={`h-5 w-5 text-yellow-500 transition-all duration-300 ${
+          theme === "dark" 
+            ? "opacity-100 rotate-0 scale-100" 
+            : "opacity-0 rotate-90 scale-0 absolute"
+        }`} />
+        
+        {/* Moon icon */}
+        <Moon className={`h-5 w-5 text-cyan-500 transition-all duration-300 ${
+          theme === "light" 
+            ? "opacity-100 rotate-0 scale-100" 
+            : "opacity-0 -rotate-90 scale-0 absolute"
+        }`} />
+      </div>
     </Button>
   );
 };
